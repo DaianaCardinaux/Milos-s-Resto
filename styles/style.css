@@ -1,0 +1,864 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+}
+
+header { 
+    display: flex;
+}
+
+.menu, .desplegable {
+    display: none;
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    top: -25px;
+    justify-content: space-around;  
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    right: 10px;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 180px;
+    margin-top: -5px;
+}
+
+.nav-items {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: rgb(10, 10, 10);
+    font-size: 19px;
+    font-weight: 500;
+    margin: 50px 10px 0px 10px;
+}
+
+.nav-link:hover {
+    color: rgb(80, 80, 80);
+}
+
+.menulink {
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    margin: 50px 10px 0px 10px;
+}
+
+.menulink:hover {
+    color: rgb(134, 134, 134);
+}
+
+.abrir-menu,
+.cerrar-menu, .abrirmenu {
+    display: none;
+}
+
+/* SLIDER */
+
+.HeaderIndex {
+    position: relative;
+    z-index: 1;
+}
+
+.sliderinicio {
+    position: relative;
+    margin-top: -190px;
+    width: 100%;
+    margin-bottom: 50px;
+    z-index: 0;
+}
+
+.SliderIndex img {
+    width: 100%;
+    height: 600px;
+    box-shadow: 1px 0.1px 10px rgba(22, 22, 22, 1);
+}
+
+.primera {
+    object-fit: cover;
+}
+
+/* Especiales de la casa */
+
+.especial, .TituloNosotros, .UbicacionTitulo, .HorariosTitulo {
+    font-size: 20px;
+    text-align: center;
+}
+
+.guion {
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: -17px;
+}
+
+
+/* Tarjetas */
+
+/* Ensalada Cesar */
+
+.TituloDerecha {
+    text-align: center;
+    margin-left: 260px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.InformacionDerecha {
+    color: white;
+    font-size: 17px;
+    margin: 0px 20px 0px 20px;
+    margin-top: -15px;
+}
+
+.ImagenDerecha {
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+
+.especialesD:hover {
+    animation-duration: 1.5s;
+    animation-name: izquierda;
+}
+
+@keyframes izquierda {
+  from {
+    margin-left: 20%;   
+  }
+
+  to {
+    margin-left: 0%;   
+  }
+}
+
+
+.informacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A1612;
+    height: 170px;
+}
+
+.PrecioDerecha {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: -30px;
+    color: rgb(252, 156, 143);
+}
+
+/* Pollo Al Horno */
+
+.TituloIzquierda {
+    text-align: center;
+    margin-right: 260px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.InformacionIzquierda {
+    color: white;
+    font-size: 17px;
+    margin: 0px 20px 0px 20px;
+    margin-top: -15px;
+}
+
+.ImagenIzquierda {
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+.especialesI:hover {
+    animation-duration: 1.5s;
+    animation-name: derecha;
+}
+
+@keyframes derecha {
+  from {
+    margin-right: 20%;   
+  }
+
+  to {
+    margin-right: 0%;   
+  }
+}
+
+
+.informacionizqu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A1612;
+    height: 170px;
+}
+
+.PrecioIzquierda {
+    margin-left: 20px;
+    margin-top: -25px;
+    text-align: start;
+    color: rgb(252, 156, 143);
+}
+
+/* Ubicacion */
+
+.Ubicacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa {
+    width: 50%;
+    height: 350px;
+    margin: 0px 0px 0px 5px;
+}
+
+.UbicacionLocal {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* horario */
+
+.Horario {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 17px;  
+    text-align: center; 
+    display: inline-flex;
+    margin: 0px 5px 0px 5px;
+}
+
+.Horarios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* footer */
+
+footer {
+    font-family: 'nunito', sans-serif;
+}
+
+.footer {
+    background-color: #0A1612;
+    height: 300px;
+    font-size: 15px;
+    color: rgb(255, 249, 223);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Creditos {
+    background-color: #050a09;
+    height: 30px;
+    font-size: 15px;
+    color: rgb(255, 249, 223);
+    text-align: center;
+}
+
+.Redes {
+    text-align: center;
+}
+
+.RedesSociales {
+    font-size: 15px;
+}
+
+.IconoRedes {
+    width:30px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* MENU */
+
+.menumarcado {
+    font-weight: 600;
+}
+
+.TituloCarne {
+    margin-top: 50px;
+    margin-bottom: -60px;
+}
+
+.Titulos {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.GuionMenu {
+    font-size: 14px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: -17px;
+    color: white;
+    margin-bottom: -30px;
+}
+
+.MenuColor, .menuabrir, .BodyContacto, .NavbarNosotros, .ColorFundadores, .NosotrosNavBar {
+    background-color: #0A1612;
+}
+
+.ImagenPrimeras {
+    width: 249px;
+    height: 170px;
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.TarjetasMenuPrimeras, .PersonaOpinion{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 255px;
+    margin: 15px 10px 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.TarjetasMenuPrimeras:hover, .PersonaOpinion:hover {
+    transform: scale(1.03);
+}
+
+.TitulosPrimeras, .PersonaOpinion, .estrella {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.InformacionPrimeras, .PersonaOpinion {
+    font-size: 17px;
+    justify-content: center;
+    margin: 0px 3px 5px 3px;
+    height: 150px;
+}
+
+.PersonaOpinion {
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: rgb(223, 137, 137);
+    margin: 20px;
+}
+
+.PrecioPrimeras {
+    text-align: end;
+    color: rgb(167, 68, 55);
+    font-size: 17px;
+}
+
+.carnes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.FooterMenu {
+    background-color: #07110e;
+    height: 300px;
+    font-size: 16px;
+    margin-top: 90px;
+    color: rgb(255, 249, 223);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row {
+    animation-name: aparicion;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+@keyframes aparicion {
+    0%{
+        opacity: 0;
+        transform: scale(2) translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* NOSOTROS */
+
+.Nosotros {
+    font-weight: bold;
+}
+
+.SliderDescripcion {
+    display: flex;
+    margin: 50px 5px 50px 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slidernosotros {
+    width: 40%;
+}
+
+.FotosNosotros {
+    height: 400px;
+}
+
+.DescripcionResto {
+    width: 30%;
+    font-size: 17px;
+}
+
+.NL, .Martin, .Contacto {
+    color: white;
+}
+
+.Fundadores{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -50px;
+}
+
+
+.Nombre {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Daia {
+    width: 150px;
+    height: 140px;
+}
+
+.F1, .F2 {
+    transition: all 0.3s ease-in-out;
+}
+
+.F1:hover,.F2:hover {
+    transform: scale(1.03);
+}
+
+.DentroOpinion {
+    margin: 20px;   
+}
+
+.PersonaOpinion {
+    width: 250px;
+    height: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mostrarMas {
+    background: none;
+    border: none;
+    color: rgb(175, 31, 26);
+    cursor: pointer;
+}
+
+/* RESERVAS */
+
+#FondoReserva {
+    background-image: url(../images/Logo/fondoreserva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reservas {
+    margin-top: 20px;
+}
+
+.CardReserva {
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 20px;
+    width: 85%;
+    height: 1200px;
+    box-shadow: 1px 0.1px 10px rgb(33, 59, 28);
+}
+
+.Seleccionar, .Fecha, .Mesa, #nom, #email, #tel, #asunto, #botonenviar {
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#botonenviar {
+    width: 25%;
+    background-color: rgb(235, 235, 214);
+}
+
+.Fecha {
+    width: 150px;
+}
+
+.HorarioReserva {
+    padding: 0px 20px 0px 20px;
+}
+
+.BotonSubir {
+    width: 100%;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: #0A1612;
+    color: white;
+    box-shadow: 1px 0.1px 10px rgb(33, 59, 28);
+}
+
+#BotonMesero {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.Reservacion {
+    margin: 90px 0px 90px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    .ImagenPrimeras {
+        width: 224px;
+        height: 170px;
+    }
+    
+    .TarjetasMenuPrimeras {
+        width: 230px;
+    }
+
+    .TitulosPrimeras {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    
+    .InformacionPrimeras {
+        font-size: 15px;
+        margin: 0px 2px 5px 2px;
+    }
+    
+    .PrecioPrimeras {
+        font-size: 16px;
+    }
+
+    .SliderIndex {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    .ImagenIzquierda, .ImagenDerecha {
+        width: 180px;
+        height: 180px;
+    }
+
+    .informacionizqu, .informacion {
+        height: 140px;
+    }
+
+    .SliderIndex img  {
+        height: 550px;
+    }
+
+    .abrirmenu {
+        z-index: 2;
+        display: block;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 40px;
+        padding: 20px 0px 0px 20px;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .abrir-menu {
+        color: #3b3939;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+        font-size: 30px;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color:#07110e ;
+        padding: 40px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list, .list {
+        flex-direction: column;
+        align-items: start;
+        text-decoration: none;
+        justify-content: start;
+        list-style: none;
+    }
+
+    .nav-list li a, .BotonBlanco {
+        color: #ecececec;
+    }
+
+    .mapa {
+        width: 40%;
+        height: 250px;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .InformacionIzquierda, .mostrarMas, .estrella, .InformacionDerecha, .InformacionOpinion, .PrecioDerecha, .guion, .Horario, .PrecioIzquierda, .UbicacionLocal, .DescripcionResto {
+        font-size: 14px;
+    }
+
+    .especial, .TituloNosotros, .UbicacionTitulo, .HorariosTitulo, .TituloIzquierda, .TituloDerecha, .Nombre {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .slidernosotros {
+        width: 50%;
+    }
+    
+    .FotosNosotros {
+        height: 350px;
+    }
+    
+    .DescripcionResto {
+        width: 40%;
+    }
+
+    .Daia {
+        width: 120px;
+        height: 120px;
+    }
+
+    .PersonaOpinion {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .logo {
+        width: 150px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .mapa {
+        width: 50%;
+        height: 250px;
+        margin: 0;
+    }
+
+    .ImagenIzquierda, .ImagenDerecha {
+        width: 145px;
+        height: 145px;
+    }
+
+    .informacionizqu, .informacion {
+        height: 120px;
+    }
+
+    .InformacionIzquierda, .InformacionOpinion, .DescripcionResto, .InformacionPrimeras, .InformacionDerecha, .PrecioDerecha, .guion, .Horario, .PrecioIzquierda, .UbicacionLocal {
+        font-size: 12px;
+    }
+
+    .especial, .TituloNosotros, .mostrarMas, .estrella, .UbicacionTitulo, .HorariosTitulo, .TituloIzquierda, .TituloDerecha, .TituloNosotros, .HorarioReserva, .HorarioReservas {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .RedesSociales, .PrecioPrimeras, .TitulosPrimeras, .BotonMesero, .Creditos, .IconoRedes, .Nombre {
+        font-size: 14px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .TitulosPrimeras {
+        margin: -10px 0px 10px 0px;
+    }
+
+    .ImagenPrimeras {
+        width: 175px;
+        height: 130px;
+    }
+    
+    .TarjetasMenuPrimeras{
+        width: 180px;
+        margin: 0px 5px 5px 5px;
+    }
+    
+    .slidernosotros {
+        width: 40%;
+    }
+    
+    .FotosNosotros {
+        height: 350px;
+    }
+    
+    .DescripcionResto {
+        width: 50%;
+        margin-right: 10px;
+    }
+
+    .Daia {
+        width: 100px;
+        height: 100px;
+    }
+
+    .PersonaOpinion {
+        width: 180px;
+        height: 270px;
+    }
+
+    .logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .Lunes {
+        margin-left: -25px;
+    }
+
+    .slidernosotros {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .mapa {
+        width: 50%;
+        height: 200px;
+        margin: 0;
+    }
+
+    .ImagenIzquierda, .ImagenDerecha {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .informacionizqu, .informacion {
+        height: 120px;
+    }
+    
+    .InformacionIzquierda, .DescripcionResto, .InformacionDerecha, .PrecioDerecha, .guion, .Horario, .PrecioIzquierda, .UbicacionLocal {
+        font-size: 10px;
+    }
+    
+    .especial, .TituloNosotros, .UbicacionTitulo, .HorariosTitulo, .TituloIzquierda, .TituloDerecha, .HorarioReserva {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .footer {
+        height: 150px;
+    }
+    
+    .Creditos, .RedesSociales {
+        font-size: 12px;
+    }
+        
+    .IconoRedes {
+        width:20px;
+    }
+
+    .slidernosotros {
+        width: 60%;
+        height: 5%;
+    }
+
+    .HorarioReservas {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .slidernosotros {
+        width: 60%;
+    }
+    
+    .FotosNosotros {
+        height: 300px;
+    }
+    
+    .DescripcionResto {
+        width: 40%;
+        margin-right: 10px;
+    }
+} 
